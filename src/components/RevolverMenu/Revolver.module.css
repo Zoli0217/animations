@@ -1,0 +1,52 @@
+.revolver{
+    width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: relative;
+    background: rgb(52, 52, 52);
+    animation: rot 1s infinite;
+}
+
+@keyframes rot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chamber{
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgb(81, 81, 81);
+}
+
+.chamber:nth-child(1){
+    left: 50%;
+    top: 20%;
+}
+
+.chamber:nth-child(2){
+    right: 0%;
+    top: 35%;
+}
+
+.chamber:nth-child(3){
+    right: 0%;
+    top: 65%;
+}
+
+.chamber:nth-child(4){
+    left: 50%;
+    top: 80%;
+}
+
+.chamber:nth-child(5){
+    left: 25%;
+    top: 35%;
+}
+
+.chamber:nth-child(6){
+    left: 25%;
+    top: 65%;
+}

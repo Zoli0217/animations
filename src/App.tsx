@@ -5,7 +5,7 @@ import Revolver from './components/RevolverMenu/Revolver'
 
 const App = () => {
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: "column", gap: "20px"}}>
       <EmojiWrapper/>
       <AnimatedBorder/>
       <Revolver />
