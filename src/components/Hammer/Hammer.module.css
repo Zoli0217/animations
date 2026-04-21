@@ -1,0 +1,37 @@
+.hammerWrapper{
+    width: 500px;
+    aspect-ratio: 4 / 3;
+    background: skyblue;
+    position: relative;
+}
+
+.hammer{
+    width: 20%;
+    aspect-ratio: 4 / 3;
+    background: gray;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-90deg);
+    animation: hammerAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 220%;
+}
+
+.hammer::before{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 200%;
+    background: rgb(58, 22, 22);
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+@keyframes hammerAnim {
+    0% { transform: rotate(-45deg); }
+    50% { transform: rotate(-90deg); }
+}
